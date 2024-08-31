@@ -1,0 +1,134 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "dress-shop": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/dress-shop",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome_4.7.0_css_font-awesome.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/jquery.kenburnsy.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/pe-icon-7-stroke.css",
+              "src/assets/css/iconmoon.css",
+              "src/assets/css/et-line.css",
+              "src/assets/css/ionicons.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/tabs.css",
+              "src/assets/css/tabstyles.css",
+              "src/assets/css/loader-1.css",
+              "src/assets/css/main.css",
+              "src/assets/css/responsive.css"
+            ],
+            "scripts": [
+              "src/assets/js/vendor/jquery-1.11.2.min.js",
+              "src/assets/js/vendor/pace.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/vendor/classie.js",
+              "src/assets/js/vendor/isotope.pkgd.min.js",
+              "src/assets/js/vendor/jquery.velocity.min.js",
+              "src/assets/js/vendor/jquery.kenburnsy.min.js",
+              "src/assets/js/vendor/textslide.js",
+              "src/assets/js/vendor/imagesloaded.pkgd.min.js",
+              "src/assets/js/vendor/tabs.js",
+              "src/assets/js/ef-slider.js",
+              "src/assets/js/vendor/owl.carousel.min.js",
+              "src/assets/js/vendor/jquery.magnific-popup.min.js",
+              "src/assets/js/vendor/jquery.social-buttons.min.js",
+              "src/assets/js/vendor/wow.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/ajax.js"
+            ],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "dress-shop:build:production"
+            },
+            "development": {
+              "buildTarget": "dress-shop:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "dress-shop:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
+}
