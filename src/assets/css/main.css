@@ -202,7 +202,7 @@ hr {
   margin-top: 0px;
   margin-bottom: 20px;
   clear: both;
-  float: left;
+  float: right;
 }
 
 h1 {
@@ -402,7 +402,7 @@ ul.sublist {
 }
 
 .pagination-ef i {
-  font-size: 30px;
+  font-size: 25px;
   display: inline-table;
   vertical-align: middle;
 }
@@ -1723,7 +1723,7 @@ ul.sub-menu li a {
 }
 
 .services-icon > hr {
-  float: left;
+  float: right;
 }
 
 /* News Letter*/
@@ -1985,12 +1985,12 @@ span.position {
 }
 
 .member-name {
-  padding-left: 17px;
+  padding-right: 17px;
   font-size: 18px;
   font-weight: 100;
   /*letter-spacing: 1px;*/
   margin-top: 6px;
-  float: left;
+  float: right;
 }
 
 ul.member-social-media {
@@ -2937,6 +2937,7 @@ ul.social-buttons li {
   color: #fff;
   font-size: 24px;
   text-transform: uppercase;
+  direction: rtl;
 }
 
 .blog-front-content-inner h1 {
@@ -2944,11 +2945,13 @@ ul.social-buttons li {
   font-size: 24px;
   color: #fff;
   font-weight: 100;
+  direction: rtl;
 }
 
 .blog-front-content-inner p {
   color: #fff;
   padding-bottom: 30px;
+  direction: rtl;
 }
 
 .read-more-blog-icon {
@@ -3227,7 +3230,7 @@ ul.social-buttons li {
 }
 
 .icon-info {
-  float: left;
+  float: right;
   line-height: 45px;
 }
 
@@ -3239,7 +3242,7 @@ ul.social-buttons li {
 .description-info {
   font-size: 14px;
   display: block;
-  padding-left: 30px;
+  padding-right: 30px;
   /*letter-spacing: 1px;*/
 }
 
@@ -3316,7 +3319,7 @@ input[type="text"] {
   font-weight: 300;
   color: #3A3939;
   font-size: 28px;
-  float: left;
+  float: right;
   padding: 8px;
 }
 
@@ -3325,12 +3328,12 @@ input[type="text"] {
   font-weight: 300;
   margin-bottom: 65px;
   color: #3A3939;
-  float: left;
-  padding: 8px;
+  float: right;
+  padding: 8px 33px;
 }
 
 .page-error p a {
-  color: #7beec7;
+  color: #eb2424;
   padding-left: 5px;
   padding-right: 5px;
 }
