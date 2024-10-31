@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 web images :
 ![Screenshot 2024-10-31 at 18-32-05 فروشگاه لباس وکسوس](https://github.com/user-attachments/assets/a4febda2-9ab4-46c4-81b4-381976498909)
+![Screenshot 2024-10-31 at 18-32-50 فروشگاه لباس وکسوس](https://github.com/user-attachments/assets/fbb64137-4c46-4ac8-ab3d-d1b59b8afdd2)
+![Screenshot 2024-10-31 at 18-33-22 فروشگاه لباس وکسوس](https://github.com/user-attachments/assets/3db17d69-305f-4ba0-97c0-2e0b800f5267)
+![Screenshot 2024-10-31 at 18-49-41 فروشگاه لباس وکسوس](https://github.com/user-attachments/assets/60c2157a-5977-4bb1-9572-ec4dfc3516b6)
+![Screenshot 2024-10-31 at 18-34-40 فروشگاه لباس وکسوس](https://github.com/user-attachments/assets/bc606e35-55d4-4de2-8514-af3102ae999f)
